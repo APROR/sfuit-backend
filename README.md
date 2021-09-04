@@ -15,4 +15,4 @@ I have achieved all these using MERN stack, where Mongo DB is used for storing U
 MERN stack.
 
 ## CITATIONS
-NPM Library
+NPM Package Manager
