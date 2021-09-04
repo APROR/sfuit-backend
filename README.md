@@ -7,6 +7,7 @@ From subscribed topic which is ***apror/#***, we extract ID which is unique for 
 The Data of User is then stored in MongoDb and sent to Web App simultaneously that is to users device.
 If any abnormal data of user is encountered, then Notification is trigerred as per the health parameter of User.
 All these Logics behind BackEnd are mentioned in CODE.
+Web Sockets have been used for sending users data to Web App.
 
 I have achieved all these using MERN stack, where Mongo DB is used for storing Unique User's data, Express JS is used for creating Roots and Node, an environment for running
 MERN stack.
