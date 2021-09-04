@@ -9,6 +9,8 @@ If any abnormal data of user is encountered, then Notification is trigerred as p
 All these Logics behind BackEnd are mentioned in CODE.
 Web Sockets have been used for sending users data to Web App.
 
+The reasons behind using AWS IOT Core is that user's data is securely transferred, stored and retrieved since it has three certificates which include one RSA Private key , AWS Root Certificate, Client Certificate thus making data secure.
+
 I have achieved all these using MERN stack, where Mongo DB is used for storing Unique User's data, Express JS is used for creating Roots and Node, an environment for running
 MERN stack.
 
