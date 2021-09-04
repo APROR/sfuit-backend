@@ -1,22 +1,22 @@
 const getcriticalDescription = (payload) => {
-  const { heart, spo2, temp } = payload;
-  heart = parseInt(heart);
-  spo2 = parseInt(spo2.split("%")[0]);
-  temp = Math.ceil(parseFloat(temp));
-  if (heart < 35 && heart > 150)
+  let { BPM, SpO2, Temprature } = payload;
+  // BPM = parseInt(BPM);
+  // SpO2 = parseInt(SpO2.split("%")[0]);
+  // Temprature = Math.ceil(parseFloat(temp));
+  if (BPM < 35 && BPM > 150)
     return {
       title: "Abnormal Heart Rate",
-      description: `Heart Rate is Critical ${heart} BPM`,
+      description: `Heart Rate is Critical ${BPM} BPM`,
     };
-  if (spo2 < 85)
+  if (SpO2 < 85)
     return {
       title: "Shortness Of Breath",
-      description: `Blood Oxygen Level Is Low : ${spo2}%`,
+      description: `Blood Oxygen Level Is Low : ${SpO2}%`,
     };
-  if (temp > 100)
+  if (Temprature > 100)
     return {
       title: "Fever ?",
-      description: `Feels Like You Have Fever : ${temp}*F`,
+      description: `Feels Like You Have Fever : ${Temprature}*F`,
     };
 };
 
